@@ -1,0 +1,234 @@
+body {
+  background-color: #e7e7e7;
+  margin: auto;
+}
+#navbar {
+  background-color: #555152;
+  height: 80px;
+  padding: 5px;
+  border-bottom: 1px solid #e7e7e7;
+}
+#logo h1 {
+  display: flex;
+  float: left;
+}
+#logo img {
+  float: left;
+  height: 60px;
+  width: auto;
+}
+#profile img {
+  height: 70px;
+  width: auto;
+  float: right;
+  border-radius: 50%;
+}
+.main {
+  height: calc(100vh - 81px);
+  
+}
+#sidebar {
+  
+  overflow: hidden;
+  background-color: #555152;
+  height: calc(100vh - 81px);
+  width: 150px;
+  display: flex;
+  float: left;
+}
+#sidebar nav {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  padding: 15px 30px 30px 30px;
+}
+#sidebar nav a:active {
+  text-decoration: none;
+  color: #04C675;
+}
+#sidebar nav a {
+  color: #04fff7;
+  padding: 10px;
+}
+#sidebar nav a :first-child {
+  padding-top: 0;
+ 
+}
+
+#container {
+  padding: 15px;
+  width: calc(100vw - 200px);
+ float:left;
+}
+#container > h2 {
+  margin: 0 0 15px 0;
+  color: #101010;
+  text-decoration: underline;
+}
+#tile-container {
+  display: flex;
+  margin-bottom: 5px;
+}
+.tile {
+  height: 150px;
+  width: calc(100% / 4);
+}
+
+.green-bg {
+  background-color: #04c675;
+}
+.purple-bg {
+  background-color: #974eff;
+}
+.red-bg {
+  background-color: #ef4319;
+}
+.blue-bg {
+  background-color: #18b3fb;
+}
+.tile,
+.circle,
+.chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically centre*/
+  align-items: center; /* horizontally centre*/
+ 
+
+}
+.circle {
+  width:calc((100%) / 4) ;
+}
+.circle,
+.chart{
+  height: calc((100vw - 180px) / 4);
+}
+.chart {
+  width: min-content;
+}
+.circle,
+.chart {
+ 
+  border-radius: 50%;
+  margin-right: 15px;
+  float: left;
+}
+.inner-circle1 {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  background-color: #04c675;
+  display: flex;
+  justify-content: center;
+}
+.inner-circle1 h1 {
+  color: white;
+}
+.inner-circle2 {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+}
+.inner-circle3 {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border-radius: 50%;
+  background-color: #fe6656;
+  display: flex;
+  justify-content: center;
+}
+.inner-circle3 h1{
+  color: white;
+}
+.smallcircle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #964dfe;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+.incircle h1 {
+
+  align-self: center;
+  text-size-adjust: 80%;
+}
+.chart {
+  height: calc((100vw - 180px) / 4);
+}
+.bar {
+  width: 15px;
+  position: absolute;
+}
+.chart {
+  display: block;
+  flex-direction: column;
+  position: relative;
+}
+.chart div {
+  bottom: 0;
+}
+.one {
+  left: 0;
+  height: calc(100% - 60px);
+}
+.two {
+  left: 30px;
+  height: calc(100% - 50px);
+}
+.three {
+  left: 60px;
+  height: calc(100% - 10px);
+}
+.four {
+  left: 90px;
+  height: calc(100% - 100px);
+}
+.five {
+  left: 120px;
+  height: calc(100% - 40px);
+}
+.six {
+  left: 150px;
+  height: calc(100% - 80px);
+}
+.line {
+  height: 15px;
+  width: calc((100vw - 180px) / 6);
+  background-color: #101010;
+  bottom: 0;
+  position: absolute;
+}
+
+
+#tile-container,
+#circle-container {
+  display: flex;
+}
+
+#tile-container > div,
+#circle-container > div {
+  margin-right: 15px;
+}
+
+}
+#tile-container {
+  margin-bottom: 5px;
+}
+#tile-container > div:last-child,
+#circle-container > div:last-child {
+  margin-right: 0px;
+}
+.tile h3,
+.tile p {
+  color: #fff;
+}
+
+  
