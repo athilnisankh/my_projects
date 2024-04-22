@@ -1,0 +1,38 @@
+/* Reset some default styling */
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the sidebar */
+  .sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 20px; 
+  }
+  
+  /* Style sidebar links */
+  .sidebar h2, .sidebar li {
+    color: white; 
+    padding: 8px; 
+    text-decoration: none;
+  }
+  
+  /* Style the content */
+  .content {
+    margin-left: 200px;
+    padding: 15px;
+  }
+  
+  /* Style the table */
+  #students-table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
