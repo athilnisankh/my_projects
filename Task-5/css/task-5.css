@@ -23,6 +23,7 @@
    padding-right: 5px;
     border-radius: 50%;
     width: 60px;
+    padding-right: 15px;
    
 }
 .logo-container {
@@ -44,11 +45,12 @@
     width: calc(100vw);
     height: calc(100vh - 82px);
     overflow: hidden;
+    
    
 }
 #sidebar {
     width: 250px;
-    height: calc(100% - 82px);
+    height: calc(100vh - 82px);
     border-right: 2px solid #D1D1D1;
     padding: 15px;
    
@@ -72,6 +74,8 @@
     width: calc(100% - 312px);
    padding: 15px;
     float: left;
+    overflow-y: auto;
+   
 }
 #heading {
     display: flex;
@@ -101,11 +105,17 @@ table {
     margin-top: 15px;
 
 }
+table.colored-table{
+    border-collapse: collapse;
+}
+.colored-table tr {
+    border-bottom: 2px solid black;
+}
 
-table,
-th,
-td {
-    border: 2px solid #D1D1D1;
+table.list-table,
+.list-table th,
+.list-table td {
+    border: 2px solid #000000;
     border-collapse: collapse;
 }
 
@@ -124,3 +134,35 @@ td,
 th {
     padding: 15px;
 }
+
+caption {
+    padding-bottom: 15px;
+font-size: 25px;
+text-decoration: underline;
+}
+.list-table th:first-child,
+.list-table td:first-child  {
+    text-align: center;
+    width: auto;}
+
+    /* .colored-table tr:nth-child(odd) {
+        background-color: greenyellow;
+    } */
+    .colored-table tr:hover{
+        background-color: #38ff0c;
+    }
+
+    @media only screen and (max-width: 767px) {
+        #sidebar {
+            display: none;
+        }
+        #content {
+            width: calc(100% - 30px);
+            overflow-x: auto;
+        }
+    }
+    a img {
+        width: 25px;
+        float: inline-start;
+        
+    }
