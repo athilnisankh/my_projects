@@ -148,4 +148,12 @@ text-decoration: underline;
 .main-content {
     overflow: auto;
 }
-  
+@media only screen and (max-width: 767px) {
+    .sidebar {
+      display: none;
+    }
+    .content {
+      width: calc(100vw);
+      overflow-x: auto;
+    }
+  }

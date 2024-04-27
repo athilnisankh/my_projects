@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-5</title>
+    <link rel="stylesheet" href="css/task-6.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="logo-container">
+        <img src="images/task-5-logo.png" alt="logo.png" />
+        <h2>One School</h2>
+      </div>
+      <div class="profile-container">
+        <img src="images/task-5-profile-1.jpg" alt="profile.jpg" />
+      </div>
+    </div>
+    <div id="container">
+      <div id="sidebar">
+        <nav>
+          <a href="task-6.html"
+            >Students
+            <img src="images/2698692_avatar_boy_cheerful_mark_icon.png" alt=""
+          /></a>
+          <a href="#">Staff</a>
+          <a href="#">Exams</a>
+        </nav>
+      </div>
+      <div id="content">
+        <div id="heading">
+          <h2>Student registration</h2>
+        </div>
+        <div class="form-container">
+          <form action="">
+            <div class="raw-container">
+              <div class="input-container">
+                <label for="First_name"
+                  >First name <span class="redtext">*</span> :</label
+                >
+                <input
+                  type="text"
+                  name="First_name"
+                  id="First_name"
+                  placeholder="Enter your first name"
+                />
+              </div>
+              <div class="input-container">
+                <label for="Last_name"
+                  >Last name <span class="redtext">*</span> :</label
+                >
+                <input
+                  type="text"
+                  name="Last_name"
+                  id="Last_name"
+                  placeholder="Enter your last name"
+                />
+              </div>
+            </div>
+            <div class="raw-container">
+              <div class="input-container">
+                <label for="mobile"
+                  >Mobile <span class="redtext">*</span> :</label
+                >
+                <input
+                  type="tel"
+                  name="mobile"
+                  id="mobile"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+              <div class="input-container">
+                <label for="Email">Email :</label>
+                <input
+                  type="email"
+                  name="Email"
+                  id="Email"
+                  placeholder="Enter your email address"
+                />
+              </div>
+            </div>
+            <div class="raw-container">
+              <div class="input-container">
+                <label for="Branch"
+                  >Branch <span class="redtext">*</span> :</label
+                >
+                <select name="Branch" id="Branch">
+                  <option value="">Select your branch</option>
+                  <option value="jags Kiel">jags Kiel</option>
+                  <option value="EC">EC</option>
+                  <option value="CH">CH</option>
+                  <option value="AU">AU</option>
+                  <option value="CT">CT</option>
+                  <option value="CE">CE</option>
+                  <option value="CE HI">CE HI</option>
+                </select>
+              </div>
+              <div class="input-container">
+                <label for="hostel_facility"
+                  >Do you need hostel facility :</label
+                >
+                <label class="wrapper">
+                  <input
+                    type="radio"
+                    name="hostel_facility"
+                    id="hostel_facility_yes"
+                  />Yes
+                </label>
+                <label class="wrapper">
+                  <input
+                    type="radio"
+                    name="hostel_facility"
+                    id="hostel_facility_no"
+                  />No
+                </label>
+              </div>
+            </div>
+            <div class="raw-container">
+              <div class="input-container">
+                <label for="checkbox">Choose additional subjects :</label>
+                <label class="wrapper checkwrapper">
+                  <input
+                    type="checkbox"
+                    name="additional_subjects"
+                    value="cyber security"
+                  />
+                  Cyber security
+                </label>
+                <label class="wrapper checkwrapper">
+                  <input
+                    type="checkbox"
+                    name="additional_subjects"
+                    value="artificial intelligence"
+                  />
+                  Artificial intelligence
+                </label>
+                <label class="wrapper checkwrapper">
+                  <input
+                    type="checkbox"
+                    name="additional_subjects"
+                    value="Blockchain"
+                  />
+                  Blockchain
+                </label>
+                <label class="wrapper checkwrapper">
+                  <input
+                    type="checkbox"
+                    name="additional_subjects"
+                    value="Iot"
+                  />
+                  Iot
+                </label>
+                <label class="wrapper checkwrapper">
+                  <input
+                    type="checkbox"
+                    name="additional_subjects"
+                    value="Robotics"
+                  />
+                  Robotics
+                </label>
+              </div>
+            </div>
+            <div class="raw-container">
+              <div class="input-container">
+                <label for="address"
+                  >Permanent address <span class="redtext">*</span> :</label
+                >
+                <textarea
+                  name="address"
+                  id="address"
+                  rows="5"
+                  placeholder="Enter address"
+                ></textarea>
+              </div>
+            </div>
+            <div class="raw-container right">
+              <input type="reset" value="CLEAR">
+            <input type="submit" value="SUBMIT">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
